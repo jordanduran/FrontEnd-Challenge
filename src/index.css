@@ -33,9 +33,9 @@ body {
 .weather-city {
   display: inline-block;
   margin-bottom: 8px;
+  color: #4d4d4d;
   font-weight: 100;
   font-size: 40px;
-  color: #4d4d4d;
 }
 
 .weather-icon {
@@ -64,9 +64,11 @@ body {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
-  width: 150px;
+  width: 200px;
   margin: 0;
   margin-bottom: 0;
+  color: #5e5e5e;
+  font-size: 20px;
 }
 
 /* Form Section */
