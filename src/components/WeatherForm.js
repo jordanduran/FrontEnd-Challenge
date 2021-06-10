@@ -21,8 +21,8 @@ const WeatherForm = ({ onHandleChangeZipCode }) => {
         <input
           type='text'
           value={zipCode}
+          maxLength='5'
           placeholder='10036'
-          onFocus={(event) => (event.target.placeholder = '')}
           onChange={handleChange}
         />
         <button className='weather-update-btn'>Update</button>
