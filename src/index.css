@@ -91,7 +91,7 @@ label {
 }
 
 input {
-  color: #5c5c5c;
+  color: #414141;
   width: 95px;
   border-radius: 3px;
   border: 1px solid transparent;
@@ -104,11 +104,12 @@ input {
 
 input[type='text'] {
   padding-left: 8px;
+  letter-spacing: 0.5px;
 }
 
 input::placeholder {
   color: #888888;
-  letter-spacing: 0.3px;
+  letter-spacing: 0.5px;
 }
 
 .weather-update-btn {
