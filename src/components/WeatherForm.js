@@ -5,8 +5,7 @@ const WeatherForm = ({ onHandleChangeZipCode }) => {
   const [zipCode, setZipCode] = useState('');
 
   const handleChange = (event) => {
-    const { value } = event.target;
-    setZipCode(value);
+    setZipCode(event.target.value);
   };
 
   const handleSubmit = (event) => {
