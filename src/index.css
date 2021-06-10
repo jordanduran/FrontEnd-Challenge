@@ -1,0 +1,134 @@
+/* Font family */
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;600&display=swap');
+
+html {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Open Sans', sans-serif;
+  margin: 0;
+}
+
+/* Weather Section */
+
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 350px;
+  width: 600px;
+  margin: 0 auto;
+  text-align: center;
+  border-bottom: 1px solid rgba(138, 138, 138, 0.705);
+}
+
+.weather-header {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.weather-city {
+  font-size: 40px;
+  margin-bottom: 8px;
+  display: inline-block;
+}
+
+.weather-icon {
+  width: 50px;
+  padding-left: 4px;
+  display: inline-block;
+  justify-self: center;
+  margin-top: 1em;
+}
+
+.weather-description {
+  font-size: 17px;
+  text-transform: capitalize;
+  margin: 0;
+}
+
+.weather-main {
+  font-size: 50px;
+  text-align: center;
+  margin-bottom: 0;
+}
+
+.weather-temps {
+  width: 150px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin: 0;
+  margin-bottom: 0;
+}
+
+/* Form Section */
+
+.weather-form-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /* margin: 4em 0; */
+  margin: 0 auto;
+  margin-top: 4em;
+  width: 600px;
+}
+
+.input,
+label {
+  display: block;
+}
+
+label {
+  font-size: 13px;
+  margin-bottom: 5px;
+}
+
+input {
+  width: 100px;
+  border-radius: 3px;
+  border: 1px solid transparent;
+  border-top: none;
+  border-bottom: 1px solid #ddd;
+  box-shadow: inset 0 1px 2px rgba(0, 0, 0, 0.39), 0 -1px 1px #fff, 0 1px 0 #fff;
+}
+
+.input:focus {
+  padding: 8px;
+}
+
+::placeholder {
+  padding: 8px;
+  color: rgb(136, 136, 136);
+  letter-spacing: 0.3px;
+}
+
+.weather-update-btn {
+  cursor: pointer;
+  border: 1px solid rgb(169, 169, 169);
+  border-top: 1px solid rgb(203, 203, 203);
+  padding: 9px 48px;
+  background: #ebebeb;
+  background-image: -webkit-linear-gradient(top, #ebebeb, #b0b0b0);
+  background-image: -moz-linear-gradient(top, #ebebeb, #b0b0b0);
+  background-image: -ms-linear-gradient(top, #ebebeb, #b0b0b0);
+  background-image: -o-linear-gradient(top, #ebebeb, #b0b0b0);
+  background-image: linear-gradient(to bottom, #ebebeb, #b0b0b0);
+  -webkit-border-radius: 28;
+  -moz-border-radius: 28;
+  border-radius: 4px;
+  box-shadow: 1px 1px 0.5px #a5a5a5;
+  margin-left: 10px;
+  font-size: 13px;
+  font-weight: 600;
+  letter-spacing: 0.2px;
+  color: #434343;
+}
+
+.form-controls {
+  display: flex;
+  justify-content: space-between;
+}
