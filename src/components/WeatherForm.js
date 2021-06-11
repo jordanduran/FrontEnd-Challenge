@@ -19,9 +19,10 @@ const WeatherForm = ({ onHandleChangeZipCode }) => {
       <div className='form-controls'>
         <input
           type='text'
-          value={zipCode}
+          minLength='5'
           maxLength='5'
           placeholder='10036'
+          value={zipCode}
           onChange={handleChange}
         />
         <button className='weather-update-btn'>Update</button>

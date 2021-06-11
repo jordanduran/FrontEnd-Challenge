@@ -82,8 +82,8 @@ body {
   width: 600px;
 }
 
-.input,
-label {
+label,
+input {
   display: block;
 }
 

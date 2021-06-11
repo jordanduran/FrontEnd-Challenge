@@ -14,11 +14,8 @@ const App = () => {
       .catch((error) => console.error(error));
   }, [currentZipCode]);
 
-  const handleChangeZipCode = (enteredZipcode) => {
-    if (currentZipCode !== enteredZipcode) {
-      setCurrentZipCode(enteredZipcode);
-    }
-  };
+  const handleChangeZipCode = (enteredZipcode) =>
+    setCurrentZipCode(enteredZipcode);
 
   const weatherOutput = Object.keys(weatherData).length && (
     <Fragment>
