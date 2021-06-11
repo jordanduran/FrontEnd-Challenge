@@ -125,7 +125,7 @@ input::placeholder {
   border: 1px solid rgb(169, 169, 169);
   border-top: 1px solid rgb(203, 203, 203);
   border-radius: 4px;
-  box-shadow: 1px 1px 0.5px #a5a5a5;
+  box-shadow: 0.5px 0.5px 1.5px #a5a5a5;
   background: #ebebeb;
   background-image: -webkit-linear-gradient(top, #ebebeb, #b0b0b0);
   background-image: -moz-linear-gradient(top, #ebebeb, #b0b0b0);
