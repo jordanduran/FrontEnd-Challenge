@@ -4,9 +4,7 @@ import PropTypes from 'prop-types';
 const WeatherForm = ({ onHandleChangeZipCode }) => {
   const [zipCode, setZipCode] = useState('');
 
-  const handleChange = (event) => {
-    setZipCode(event.target.value);
-  };
+  const handleChange = (event) => setZipCode(event.target.value);
 
   const handleSubmit = (event) => {
     event.preventDefault();
