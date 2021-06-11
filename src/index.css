@@ -32,7 +32,7 @@ body {
 
 .weather-city {
   display: inline-block;
-  margin-bottom: 8px;
+  margin: 0;
   color: #4d4d4d;
   font-weight: 100;
   font-size: 40px;
