@@ -71,6 +71,12 @@ body {
   font-size: 20px;
 }
 
+.degree-symbol {
+  font-size: 35px;
+  position: absolute;
+  padding-left: 8px;
+}
+
 /* Form Section */
 
 .weather-form-container {
