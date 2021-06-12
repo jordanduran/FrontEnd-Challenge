@@ -1,4 +1,5 @@
 import { Fragment, useState, useEffect } from 'react';
+import axios from 'axios';
 import WeatherForm from './WeatherForm';
 
 const Weather = () => {
@@ -6,11 +7,11 @@ const Weather = () => {
   const [currentZipCode, setCurrentZipCode] = useState('10036');
 
   useEffect(() => {
-    fetch(
-      `https://api.openweathermap.org/data/2.5/weather?zip=${currentZipCode},us&appid=00ab9760d6984c9b493982a245485892`
-    )
-      .then((response) => response.json())
-      .then((data) => setWeatherData(data))
+    axios
+      .get(
+        `https://api.openweathermap.org/data/2.5/weather?zip=${currentZipCode},us&appid=00ab9760d6984c9b493982a245485892`
+      )
+      .then((response) => setWeatherData(response.data))
       .catch((error) => console.error(error));
   }, [currentZipCode]);
 
