@@ -10,7 +10,7 @@ const Weather = () => {
     const fetchWeatherData = async () => {
       try {
         const response = await axios.get(
-          `https://api.openweathermap.org/data/2.5/weather?zip=${currentZipCode},us&appid=00ab9760d6984c9b493982a245485892`
+          `https://api.openweathermap.org/data/2.5/weather?zip=${currentZipCode},us&appid=${process.env.REACT_APP_API_KEY}`
         );
         setWeatherData(response.data);
       } catch (error) {
@@ -46,6 +46,8 @@ const Weather = () => {
       </div>
     </Fragment>
   );
+
+  console.log(weatherData);
 
   return (
     <Fragment>
