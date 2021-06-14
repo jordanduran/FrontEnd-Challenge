@@ -47,8 +47,6 @@ const Weather = () => {
     </Fragment>
   );
 
-  console.log(weatherData);
-
   return (
     <Fragment>
       <div className='container'>{weatherOutput}</div>
