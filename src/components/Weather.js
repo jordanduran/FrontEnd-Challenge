@@ -38,7 +38,7 @@ const Weather = () => {
         {weatherData.weather[0].description}
       </p>
       <p className='weather-main'>
-        {weatherData.main.temp} <span className='degree-symbol'>&#176;</span>
+        {weatherData.wind.deg} <span className='degree-symbol'>&#176;</span>
       </p>
       <div className='weather-temps'>
         <p>{weatherData.main.temp_min} &#176;</p>
